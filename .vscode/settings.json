@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "dynstruct.h": "c",
+        "stdlib.h": "c",
+        "word_list.h": "c"
+    }
+}
