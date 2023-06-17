@@ -30,7 +30,7 @@ enum e_TokenCode
     TK_CLOSEBR,     //]
     TK_BEGIN,       //{
     TK_END,         //}
-    TK_SEMTCOLON,   //;
+    TK_SEMICOLON,   //;
     TK_COMMA,       //,
     TK_ELLTPSIS,    //...
     TK_EOF,         //end of file
@@ -66,5 +66,9 @@ typedef struct _TKWord
     char* spelling;
 }TKWord;
 
-
+unsigned int ELFHash(char *s);
+TKWord *tkword_direct_insert(TKWord * tp);
+TKWord* tkword_find(char *word, int hashno);
+TKWord* tkword_insert(char* p);
+void init_lex();
 #endif
